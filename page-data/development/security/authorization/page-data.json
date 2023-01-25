@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-security-authorization-md",
-    "path": "/development/security/authorization/",
-    "result": {"pageContext":{"frontmatter":{"title":"Authorization | Commerce PHP Extensions","description":"Control access to Adobe Commerece and Magento Open Source pages using different authorization strategies."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-security-authorization-md","path":"/development/security/authorization/","result":{"pageContext":{"frontmatter":{"title":"Authorization | Commerce PHP Extensions","description":"Control access to Adobe Commerece and Magento Open Source pages using different authorization strategies."}}},"staticQueryHashes":["915530536"]}

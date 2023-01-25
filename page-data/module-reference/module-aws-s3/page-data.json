@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-aws-s-3-md",
-    "path": "/module-reference/module-aws-s3/",
-    "result": {"pageContext":{"frontmatter":{"title":"AwsS3","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-aws-s-3-md","path":"/module-reference/module-aws-s3/","result":{"pageContext":{"frontmatter":{"title":"AwsS3","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

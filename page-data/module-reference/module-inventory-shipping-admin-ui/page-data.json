@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-inventory-shipping-admin-ui-md",
-    "path": "/module-reference/module-inventory-shipping-admin-ui/",
-    "result": {"pageContext":{"frontmatter":{"title":"InventoryShippingAdminUi","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-inventory-shipping-admin-ui-md","path":"/module-reference/module-inventory-shipping-admin-ui/","result":{"pageContext":{"frontmatter":{"title":"InventoryShippingAdminUi","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

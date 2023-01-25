@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-tutorials-custom-checkout-index-md",
-    "path": "/tutorials/custom-checkout/",
-    "result": {"pageContext":{"frontmatter":{"title":"Customize Checkout | Commerce PHP Extensions","description":"Review a list of tutorials focused on customizing the Adobe Commerce and Magento Open Source checkout experience."}}},
-    "staticQueryHashes": ["915530536"]}

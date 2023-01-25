@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-prepare-index-md",
-    "path": "/development/prepare/",
-    "result": {"pageContext":{"frontmatter":{"title":"Prepare | Commerce PHP Extensions","description":"Navigate preparatory resources available for Adobe Commerce and Magento Open Source component development."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-prepare-index-md","path":"/development/prepare/","result":{"pageContext":{"frontmatter":{"title":"Prepare | Commerce PHP Extensions","description":"Navigate preparatory resources available for Adobe Commerce and Magento Open Source component development."}}},"staticQueryHashes":["915530536"]}

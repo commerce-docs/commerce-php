@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-release-notification-md",
-    "path": "/module-reference/module-release-notification/",
-    "result": {"pageContext":{"frontmatter":{"title":"ReleaseNotification","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-release-notification-md","path":"/module-reference/module-release-notification/","result":{"pageContext":{"frontmatter":{"title":"ReleaseNotification","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

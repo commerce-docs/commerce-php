@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-quick-order-md",
-    "path": "/module-reference/module-quick-order/",
-    "result": {"pageContext":{"frontmatter":{"title":"QuickOrder","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-quick-order-md","path":"/module-reference/module-quick-order/","result":{"pageContext":{"frontmatter":{"title":"QuickOrder","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

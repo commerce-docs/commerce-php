@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-security-non-secure-functions-md",
-    "path": "/development/security/non-secure-functions/",
-    "result": {"pageContext":{"frontmatter":{"title":"Non-Secure Functions | Commerce PHP Extensions","description":"Avoid using PHP functions in Adobe Commerce and Magento Open Source components that are known to be vulnerable and exploitable."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-security-non-secure-functions-md","path":"/development/security/non-secure-functions/","result":{"pageContext":{"frontmatter":{"title":"Non-Secure Functions | Commerce PHP Extensions","description":"Avoid using PHP functions in Adobe Commerce and Magento Open Source components that are known to be vulnerable and exploitable."}}},"staticQueryHashes":["915530536"]}

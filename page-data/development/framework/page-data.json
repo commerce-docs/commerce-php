@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-framework-index-md",
-    "path": "/development/framework/",
-    "result": {"pageContext":{"frontmatter":{"title":"Framework | Commerce PHP Extensions","description":"Review introductory material about the Adobe Commerce and Magento Open Source framework."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-framework-index-md","path":"/development/framework/","result":{"pageContext":{"frontmatter":{"title":"Framework | Commerce PHP Extensions","description":"Review introductory material about the Adobe Commerce and Magento Open Source framework."}}},"staticQueryHashes":["915530536"]}

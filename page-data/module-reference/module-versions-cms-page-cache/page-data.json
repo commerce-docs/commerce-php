@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-versions-cms-page-cache-md",
-    "path": "/module-reference/module-versions-cms-page-cache/",
-    "result": {"pageContext":{"frontmatter":{"title":"VersionsCmsPageCache","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-versions-cms-page-cache-md","path":"/module-reference/module-versions-cms-page-cache/","result":{"pageContext":{"frontmatter":{"title":"VersionsCmsPageCache","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

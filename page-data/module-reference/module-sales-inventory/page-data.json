@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-sales-inventory-md",
-    "path": "/module-reference/module-sales-inventory/",
-    "result": {"pageContext":{"frontmatter":{"title":"SalesInventory","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-sales-inventory-md","path":"/module-reference/module-sales-inventory/","result":{"pageContext":{"frontmatter":{"title":"SalesInventory","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-inventory-configurable-product-frontend-ui-md",
-    "path": "/module-reference/module-inventory-configurable-product-frontend-ui/",
-    "result": {"pageContext":{"frontmatter":{"title":"InventoryConfigurableProductFrontendUi","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-inventory-configurable-product-frontend-ui-md","path":"/module-reference/module-inventory-configurable-product-frontend-ui/","result":{"pageContext":{"frontmatter":{"title":"InventoryConfigurableProductFrontendUi","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

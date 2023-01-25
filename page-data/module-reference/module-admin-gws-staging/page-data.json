@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-admin-gws-staging-md",
-    "path": "/module-reference/module-admin-gws-staging/",
-    "result": {"pageContext":{"frontmatter":{"title":"AdminGwsStaging","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-admin-gws-staging-md","path":"/module-reference/module-admin-gws-staging/","result":{"pageContext":{"frontmatter":{"title":"AdminGwsStaging","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-build-schema-validation-md",
-    "path": "/development/build/schema-validation/",
-    "result": {"pageContext":{"frontmatter":{"title":"URN Schema Validation | Commerce PHP Extensions","description":"Learn about uniform resource name (URN) schema validation for Adobe Commerce and Magento Open Source components."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-build-schema-validation-md","path":"/development/build/schema-validation/","result":{"pageContext":{"frontmatter":{"title":"URN Schema Validation | Commerce PHP Extensions","description":"Learn about uniform resource name (URN) schema validation for Adobe Commerce and Magento Open Source components."}}},"staticQueryHashes":["915530536"]}

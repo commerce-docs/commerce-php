@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-login-as-customer-admin-ui-md",
-    "path": "/module-reference/module-login-as-customer-admin-ui/",
-    "result": {"pageContext":{"frontmatter":{"title":"LoginAsCustomerAdminUi","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-login-as-customer-admin-ui-md","path":"/module-reference/module-login-as-customer-admin-ui/","result":{"pageContext":{"frontmatter":{"title":"LoginAsCustomerAdminUi","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-configuration-importers-md",
-    "path": "/development/configuration/importers/",
-    "result": {"pageContext":{"frontmatter":{"title":"Configuration Importers | Commerce PHP Extensions","description":"Standardize your Adobe Commerce and Magento Open Source configuration settings across multiple systems with configuration importers."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-configuration-importers-md","path":"/development/configuration/importers/","result":{"pageContext":{"frontmatter":{"title":"Configuration Importers | Commerce PHP Extensions","description":"Standardize your Adobe Commerce and Magento Open Source configuration settings across multiple systems with configuration importers."}}},"staticQueryHashes":["915530536"]}

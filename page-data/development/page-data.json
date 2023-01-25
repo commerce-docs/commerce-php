@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-development-index-md",
-    "path": "/development/",
-    "result": {"pageContext":{"frontmatter":{"title":"Extensions | Commerce PHP Extensions","description":"Learn about different types of Adobe Commerce and Magento Open Source components."}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-development-index-md","path":"/development/","result":{"pageContext":{"frontmatter":{"title":"Extensions | Commerce PHP Extensions","description":"Learn about different types of Adobe Commerce and Magento Open Source components."}}},"staticQueryHashes":["915530536"]}

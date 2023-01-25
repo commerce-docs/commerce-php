@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-tutorials-custom-checkout-add-carrier-validation-md",
-    "path": "/tutorials/custom-checkout/add-carrier-validation/",
-    "result": {"pageContext":{"frontmatter":{"title":"Add Custom Shipping Carrier Validations | Commerce PHP Extensions","description":"Follow this tutorial to create programmatic validations for custom shipping carriers in the Adobe Commerce and Magento Open Source checkout experience."}}},
-    "staticQueryHashes": ["915530536"]}

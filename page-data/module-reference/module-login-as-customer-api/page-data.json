@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-login-as-customer-api-md",
-    "path": "/module-reference/module-login-as-customer-api/",
-    "result": {"pageContext":{"frontmatter":{"title":"LoginAsCustomerApi","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-login-as-customer-api-md","path":"/module-reference/module-login-as-customer-api/","result":{"pageContext":{"frontmatter":{"title":"LoginAsCustomerApi","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

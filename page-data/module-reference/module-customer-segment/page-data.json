@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-customer-segment-md",
-    "path": "/module-reference/module-customer-segment/",
-    "result": {"pageContext":{"frontmatter":{"title":"CustomerSegment","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-customer-segment-md","path":"/module-reference/module-customer-segment/","result":{"pageContext":{"frontmatter":{"title":"CustomerSegment","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

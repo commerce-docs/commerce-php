@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-eav-md",
-    "path": "/module-reference/module-eav/",
-    "result": {"pageContext":{"frontmatter":{"title":"Eav","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-eav-md","path":"/module-reference/module-eav/","result":{"pageContext":{"frontmatter":{"title":"Eav","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}

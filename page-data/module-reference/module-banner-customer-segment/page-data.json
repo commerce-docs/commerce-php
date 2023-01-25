@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-module-reference-module-banner-customer-segment-md",
-    "path": "/module-reference/module-banner-customer-segment/",
-    "result": {"pageContext":{"frontmatter":{"title":"BannerCustomerSegment","description":"README.md contents of the module from the source code"}}},
-    "staticQueryHashes": ["915530536"]}
+{"componentChunkName":"component---src-pages-module-reference-module-banner-customer-segment-md","path":"/module-reference/module-banner-customer-segment/","result":{"pageContext":{"frontmatter":{"title":"BannerCustomerSegment","description":"README.md contents of the module from the source code"}}},"staticQueryHashes":["915530536"]}
