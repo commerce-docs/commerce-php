@@ -39,7 +39,7 @@ To build this site locally and contribute changes, follow these steps:
 2. In the repo's root, run this command to install dependencies:
 
    ```bash
-   yarn install
+   yarn
    ```
 
 3. Run this command to build the site locally and auto-launch your browser:
