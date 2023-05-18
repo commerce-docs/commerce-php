@@ -3,7 +3,7 @@ name: Reusable workflow example
 on:
   workflow_call:
     secrets:
-      COMMERCE_PROJECT_AUTOMATION:
+      token:
         description: Organisation secret required by the Commerce project's automation.
         required: true
 
@@ -17,11 +17,11 @@ jobs:
         uses: actions/add-to-project@v0.4.0
         with:
           project-url: https://github.com/orgs/AdobeDocs/projects/5 # The organizational project for pull requests
-          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+          github-token: ${{ secrets.token }}
       
       - name: Add to Commerce Issue project
         if: github.event_name == 'issues'
         uses: actions/add-to-project@v0.4.0
         with:
           project-url: https://github.com/orgs/AdobeDocs/projects/6 # The organizational project for issues
-          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+          github-token: ${{ secrets.token }}

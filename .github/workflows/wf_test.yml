@@ -12,4 +12,4 @@ jobs:
       pull-requests: write
     uses: ./.github/workflows/reusable_wf_test.yml
     secrets:
-      github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+      token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
