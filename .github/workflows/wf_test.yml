@@ -7,9 +7,6 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    permissions:
-      contents: read
-      pull-requests: write
     uses: ./.github/workflows/reusable_wf_test.yml
     secrets:
       token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
