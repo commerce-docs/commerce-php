@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: ./.github/workflows/wf_test.yml
+    uses: ./.github/workflows/reusable_wf_test.yml
     with:
       config-path: .github/labeler.yml
     secrets:
