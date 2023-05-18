@@ -16,4 +16,5 @@ jobs:
       contents: read
       pull-requests: write
     uses: ./.github/workflows/reusable_wf_test.yml
-    secrets: inherit
+    secrets:
+      github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
