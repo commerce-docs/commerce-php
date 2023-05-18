@@ -1,17 +1,19 @@
-name: Call a reusable workflow
+##### Aggregate Commerce PRs and Issues into a respective Organizational Project #####
+
+name: Add pull requests and issues to projects
 
 on:
-  pull_request:
-    branches:
-      - test
+  pull_request_target:
+    types:
+      - opened
+  issues:
+    types: 
+      - opened
 
 jobs:
   call-workflow-passing-data:
-    permissions:
-      contents: read
-      pull-requests: write
+    # permissions:
+    #   contents: read
+    #   pull-requests: write
     uses: ./.github/workflows/reusable_wf_test.yml
-    with:
-      config-path: .github/labeler.yml
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit

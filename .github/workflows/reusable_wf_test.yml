@@ -1,20 +1,23 @@
 name: Reusable workflow example
 
 on:
-  workflow_call:
-    inputs:
-      config-path:
-        required: true
-        type: string
-    secrets:
-      token:
-        required: true
+  workflow_call
 
 jobs:
-  triage:
+  add-to-project:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: ${{ secrets.token }}
-        configuration-path: ${{ inputs.config-path }}
+      - name: Add to Commerce PR project
+        if: github.event_name == 'pull_request_target'
+        uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: https://github.com/orgs/AdobeDocs/projects/5 # The organizational project for pull requests
+          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+      
+      - name: Add to Commerce Issue project
+        if: github.event_name == 'issues'
+        uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: https://github.com/orgs/AdobeDocs/projects/6 # The organizational project for issues
+          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
