@@ -6,6 +6,7 @@ on:
   pull_request_target:
     types:
       - opened
+      - reopened
   issues:
     types: 
       - opened
@@ -13,5 +14,4 @@ on:
 jobs:
   call-workflow-add-to-project:
     uses: commerce-docs/commerce-php/.github/workflows/add-to-project_job.yml@ds_reusable-workflow
-    secrets:
-      token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+    secrets: inherit
