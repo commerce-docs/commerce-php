@@ -1,4 +1,4 @@
-name: Reusable workflow example
+name: Add to project job
 
 on:
   workflow_call:
