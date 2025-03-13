@@ -40,7 +40,6 @@ jobs:
         reviewdog                        \
           -f=diff                        \
           -f.diff.strip=1                \
-          -name="markdownlint-fix"       \
           -reporter="github-pr-review"   \
           -filter-mode="diff_context"    \
           -fail-level=error < "${TMPFILE}"
