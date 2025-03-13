@@ -10,15 +10,14 @@ keywords:
 ![Commerce PHP Extensions](_images/home-bg.jpeg)
 
 # Commerce PHP Extensions
-
-Learn how to create and maintain PHP extensions for Adobe Commerce and Magento Open Source.
+Learn how to create and maintain PHP extensions for Adobe Commerce and Magento Open Source. 
 
 <Resources slots="heading, links"/>
 
 ## Resources
 
 *  [Commerce open-source projects](https://developer.adobe.com/open/magento)
-*  [Community Slack workspace](https://opensource.magento.com/slack)
+-  [Community Slack workspace](https://opensource.magento.com/slack)
 *  [Contributor statistics](https://developer.adobe.com/open/magento/statistic)
 
 ## Overview
