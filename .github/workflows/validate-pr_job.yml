@@ -1,82 +1,90 @@
-name: Reusable workflow to validate a pull request
-
-on: workflow_call
-
-jobs:
-  remark-test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-
-    - name: Setup reviewdog
-      uses: reviewdog/action-setup@v1.3.0
-      with:
-        reviewdog_version: v0.20.3
-
-    - name: Load super-linter configuration
-      shell: bash
-      run: cat .github/super-linter.env >> "$GITHUB_ENV"
-
-    - name: Lint Code Base with super-linter and reviewdog
-      uses: super-linter/super-linter/slim@v7.3.0
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-
-    - name: Save diff results
-      shell: bash
-      run: |
-        TMPFILE=$(mktemp)
-        git diff > "${TMPFILE}"
-        if [ ! -s "${TMPFILE}" ]; then
-          echo "No changes detected, skipping artifact upload."
-          exit 0
-        fi
-        mkdir -p ./artifacts
-        cp "${TMPFILE}" ./artifacts/diff.txt
-        echo "Linting issues found. Check the workflow run for details."
-        exit 1
-
-    - name: Upload diff artifact
-      if: failure()
-      uses: actions/upload-artifact@v4
-      with:
-        name: lint-results-${{ github.run_id }}-${{ github.run_attempt }}
-        path: artifacts/
-        retention-days: 1
-
-  remark-test:
-    permissions:
-      contents: read
-      statuses: write
-    runs-on: ubuntu-latest
-    needs: lint-test
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Setup Node and Install Dependencies Action
-        uses: commerce-docs/devsite-install-action@main
+---
+  name: Reusable workflow to validate a pull request
+  
+  on: workflow_call
+  
+  permissions: {}  # Empty default permissions
+  
+  jobs:
+    lint-test:
+      permissions:
+        contents: read
+        pull-requests: write
+      runs-on: ubuntu-latest
+  
+      steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
         with:
-          node-version-file: '.nvmrc'
-          cache-dependency-path: 'yarn.lock'
-
-      - name: Check links
-        run: yarn test
-
-  build-test:
-    permissions:
-      contents: read
-      statuses: write
-    runs-on: ubuntu-latest
-    needs: remark-test
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Setup Node and Install Dependencies Action
-        uses: commerce-docs/devsite-install-action@main
+          fetch-depth: 0
+  
+      - name: Setup reviewdog
+        uses: reviewdog/action-setup@v1.3.0
         with:
-          node-version-file: '.nvmrc'
-          cache-dependency-path: 'yarn.lock'
-
-      - name: Build site
-        run: yarn build
+          reviewdog_version: v0.20.3
+  
+      - name: Load super-linter configuration
+        shell: bash
+        run: cat .github/super-linter.env >> "$GITHUB_ENV"
+  
+      - name: Lint Code Base with super-linter and reviewdog
+        uses: super-linter/super-linter/slim@v7.3.0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+  
+      - name: Save diff results
+        shell: bash
+        run: |
+          TMPFILE=$(mktemp)
+          git diff > "${TMPFILE}"
+          if [ ! -s "${TMPFILE}" ]; then
+            echo "No changes detected, skipping artifact upload."
+            exit 0
+          fi
+          mkdir -p ./artifacts
+          cp "${TMPFILE}" ./artifacts/diff.txt
+          echo "Linting issues found. Check the workflow run for details."
+          exit 1
+  
+      - name: Upload diff artifact
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lint-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/
+          retention-days: 1
+  
+    remark-test:
+      permissions:
+        contents: read
+        statuses: write
+      runs-on: ubuntu-latest
+      needs: lint-test
+      steps:
+        - uses: actions/checkout@v4
+        - name: Use Setup Node and Install Dependencies Action
+          uses: commerce-docs/devsite-install-action@main
+          with:
+            node-version-file: '.nvmrc'
+            cache-dependency-path: 'yarn.lock'
+  
+        - name: Check links
+          run: yarn test
+  
+    build-test:
+      permissions:
+        contents: read
+        statuses: write
+      runs-on: ubuntu-latest
+      needs: remark-test
+      steps:
+        - uses: actions/checkout@v4
+        - name: Use Setup Node and Install Dependencies Action
+          uses: commerce-docs/devsite-install-action@main
+          with:
+            node-version-file: '.nvmrc'
+            cache-dependency-path: 'yarn.lock'
+  
+        - name: Build site
+          run: yarn build
+  
