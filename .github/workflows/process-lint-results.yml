@@ -2,7 +2,7 @@ name: Process Lint Results
 
 on:
   workflow_run:
-    workflows: ["Validate pull request"]
+    workflows: [Validate pull request]
     types: [completed]
 
 permissions:
