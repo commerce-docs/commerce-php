@@ -19,9 +19,7 @@ Learn how to create and maintain PHP extensions for Adobe Commerce and Magento O
 *  [Community Slack workspace](https://opensource.magento.com/slack)
 *  [Contributor statistics](https://developer.adobe.com/open/magento/statistic)
 ## Overview
-
 This documentation provides resources for developing PHP-based extensions for Adobe Commerce and Magento Open Source.
-
 ## Discover
 
 Use these sections to learn about how to develop PHP extensions.
