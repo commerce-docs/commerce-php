@@ -13,11 +13,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup reviewdog
-      uses: reviewdog/action-setup@v1.3.0
-      with:
-        reviewdog_version: v0.20.3
-
     - name: Load super-linter configuration
       shell: bash
       run: cat .github/super-linter.env >> "$GITHUB_ENV"
