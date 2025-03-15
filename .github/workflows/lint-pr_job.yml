@@ -33,6 +33,8 @@ jobs:
                   MARKDOWN_CONFIG_FILE: .markdownlint.yml
                   VALIDATE_ALL_CODEBASE: false
                   IGNORE_GITIGNORED_FILES: true
+                  LOG_LEVEL: DEBUG
+                  ACTIONS_RUNNER_DEBUG: true
 
             - name: Report linting results with reviewdog
               shell: bash
