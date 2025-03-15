@@ -7,3 +7,4 @@ jobs:
   linting:
     name: Check code with linters
     uses: ./.github/workflows/lint-pr_job.yml
+    secrets: inherit
