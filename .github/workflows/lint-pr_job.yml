@@ -1,6 +1,12 @@
 name: Reusable workflow to lint a pull request
 
-on: workflow_call
+on:
+  workflow_call:
+    inputs:
+      ref:
+        required: true
+        type: string
+        description: The git ref to checkout (PR head SHA)
 
 jobs:
     lint-test:
@@ -11,6 +17,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                   fetch-depth: 0
+                  ref: ${{ inputs.ref }}
 
             - name: Setup reviewdog
               uses: reviewdog/action-setup@v1.3.0
