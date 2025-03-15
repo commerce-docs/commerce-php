@@ -5,8 +5,8 @@ on: pull_request
 permissions:
   contents: read
   statuses: write
-  pull-requests: write
 
 jobs:
   testing:
     uses: ./.github/workflows/validate-pr_job.yml
+    secrets: inherit
