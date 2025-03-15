@@ -38,8 +38,6 @@ jobs:
               uses: super-linter/super-linter/slim@v7.3.0
               env:
                   GITHUB_TOKEN: ${{ github.token }}
-                  LOG_LEVEL: DEBUG
-                  ACTIONS_RUNNER_DEBUG: true
 
             - name: Report linting results with reviewdog
               shell: bash
