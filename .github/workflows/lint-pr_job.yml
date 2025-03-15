@@ -19,6 +19,12 @@ jobs:
                   fetch-depth: 0
                   ref: ${{ inputs.ref }}
 
+            - name: Fetch base branch
+              run: |
+                git remote add base https://github.com/commerce-docs/commerce-php.git
+                git fetch base ${{ github.event.pull_request.base.ref }}
+                git checkout ${{ inputs.ref }}
+
             - name: Setup reviewdog
               uses: reviewdog/action-setup@v1.3.0
               with:
@@ -32,12 +38,14 @@ jobs:
               uses: super-linter/super-linter/slim@v7.3.0
               env:
                   GITHUB_TOKEN: ${{ github.token }}
+                  LOG_LEVEL: DEBUG
+                  ACTIONS_RUNNER_DEBUG: true
 
             - name: Report linting results with reviewdog
               shell: bash
               run: |
                   TMPFILE=$(mktemp)
-                  git diff > "${TMPFILE}"
+                  git diff base/${{ github.event.pull_request.base.ref }} > "${TMPFILE}"
                   if [ ! -s "${TMPFILE}" ]; then
                       echo "No changes detected, skipping reviewdog."
                       exit 0
