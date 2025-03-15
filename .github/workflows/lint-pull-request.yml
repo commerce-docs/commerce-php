@@ -1,4 +1,3 @@
-
 name: Lint pull request
 
 on: pull_request_target
@@ -7,4 +6,6 @@ jobs:
   linting:
     name: Check code with linters
     uses: ./.github/workflows/lint-pr_job.yml
+    with:
+      ref: ${{ github.event.pull_request.head.sha }}
     secrets: inherit
