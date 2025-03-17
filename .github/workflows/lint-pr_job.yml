@@ -49,9 +49,10 @@ jobs:
                       exit 0
                   fi
                   git stash --include-untracked
-                  reviewdog                        \
+                  reviewdog                          \
                       -f=diff                        \
                       -f.diff.strip=1                \
+                      -name="linter-fix"             \
                       -reporter="github-pr-review"   \
                       -filter-mode="diff_context"    \
                       -fail-level=error < "${TMPFILE}"
