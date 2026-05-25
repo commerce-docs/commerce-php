@@ -9,10 +9,6 @@
   "config": {
     "sitePath": "commerce/php"
   },
-  "author": {
-    "name": "Tim Kim",
-    "url": "https://github.com/timkim"
-  },
   "engines": {
     "node": "^24.11.0"
   },
